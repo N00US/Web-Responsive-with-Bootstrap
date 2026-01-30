@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--METADATOS BÁSICOS-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N0US</title>
+
+  <!--BOOTSTRAP 5 CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--FONT AWESOME PARA ÍCONOS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--ESTILOS PERSONALIZADOS-->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--MODAL TÉRMINOS Y PRIVACIDAD-->
+<div class="modal fade" id="modalTerms" tabindex="-1" aria-labelledby="modalTermsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content bg-black border-neon text-light">
+
+      <!-- Encabezado del modal -->
+      <div class="modal-header border-bottom border-neon">
+        <h5 class="modal-title text-neon" id="modalTermsLabel">
+          Privacy Policy & Terms
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Contenido del modal -->
+      <div class="modal-body" style="max-height: 300px; overflow-y: auto;">
+        <p class="fw-bold text-neon">Privacy Policy</p>
+        <p>
+          Your personal data will only be used to respond to your message.
+          We do not share your information with third parties.
+        </p>
+
+        <hr class="border-neon">
+
+        <p class="fw-bold text-neon">Terms of Use</p>
+        <p>
+          By submitting this form, you confirm that the information provided is accurate
+          and that you accept responsible use of this contact channel.
+        </p>
+      </div>
+
+      <!-- Pie del modal -->
+      <div class="modal-footer border-top border-neon">
+        <button type="button" class="btn btn-outline-neon btn-sm" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<body>
+
+  <!--EFECTO DE LUZ-->
+  <div id="light"></div>
+
+  <!--HEADER / NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow border-bottom border-neon">
+    <div class="container">
+
+      <!-- Botón regresar -->
+      <a href="https://jdata.com.mx/SaberMas/index.html"
+         class="btn btn-outline-neon me-3 d-flex align-items-center">
+        <i class="fas fa-arrow-left me-1"></i> Back
+      </a>
+
+      <!-- Marca -->
+      <a class="navbar-brand fw-bold text-neon" href="#">N0US</a>
+
+      <!-- Botón menú responsive -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links del navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#perfil">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!--SECCIÓN PERFIL-->
+  <section id="perfil" class="bg-black text-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Imagen de perfil -->
+        <div class="col-md-4 text-center">
+          <img src="Images/RatPunk.png"
+               alt="NOUS"
+               class="img-fluid border-neon shadow-neon mb-3">
+        </div>
+
+        <!-- Información del perfil -->
+        <div class="col-md-8">
+          <h1 class="text-neon fs-1 fw-bold mb-3"></h1>
+          <p class="fs-5 text-white"></p>
+          <div class="mt-3">
+            <a href="https://github.com/N00US" class="btn btn-neon me-2">Github</a>
+            <a href="#contacto" class="btn btn-outline-neon">Contact</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SECCIÓN PROYECTOS-->
+  <section id="proyectos" class="py-5 bg-black text-light">
+    <div class="container">
+      <h2 class="text-center text-neon mb-5">Featured Projects</h2>
+
+      <div class="row g-4">
+
+        <!--CARD 1-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-neon h-100">
+            <img src="Images/1.png" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-neon">Personal Profile</h5>
+              <p class="card-text text-white">
+                This project involves creating a personal profile page that serves as the digital business card required in the selection process for front-end developers.
+              </p>
+              <div class="btn-container mt-auto">
+                <a href="Unidad 1/PersonalProfile.html" class="btn btn-neon me-2">Demo</a>
+                <a href="https://github.com/N00US/Personal-Profile" class="btn btn-outline-neon">Code</a>
+                <a href="Unidad 1/U1.Página de perfil personal-CASG.pdf" class="btn btn-outline-neon">PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 2-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-neon h-100">
+            <img src="Images/2.png" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-neon">Dev Works</h5>
+              <p class="card-text text-white">
+                In this project, I created interactive cards to showcase professional projects with responsive design and attractive visual effects.
+              </p>
+              <div class="btn-container mt-auto">
+                <a href="Unidad 2/index.html" class="btn btn-neon me-2">Demo</a>
+                <a href="https://github.com/N00US/Dev-Works" class="btn btn-outline-neon">Code</a>
+                <a href="Unidad 2/U2.Página de portafolio -CASG.pdf" class="btn btn-outline-neon">PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 3-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-neon h-100">
+            <img src="Images/3.png" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-neon">Contact Form</h5>
+              <p class="card-text text-white">
+                In this project, I designed and implemented a fully functional contact form. This form will serve as a professional point of contact for potential employers, clients, or collaborators.
+              </p>
+              <div class="btn-container mt-auto">
+                <a href="Unidad 3/index.html" class="btn btn-neon me-2">Demo</a>
+                <a href="https://github.com/N00US/Contact-Form" class="btn btn-outline-neon">Code</a>
+                <a href="Unidad 3/U3.Formulario de contacto-CASG.pdf" class="btn btn-outline-neon">PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 4-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-neon h-100">
+            <img src="Images/4.png" class="card-img-top" alt="Proyecto 4">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-neon">Event Management System</h5>
+              <p class="card-text text-white">
+                In this project, I created a website for an Event Management System, which contains event cards, a registration form, and participant management and visualization with statistics.
+              </p>
+              <div class="btn-container mt-auto">
+                <a href="Unidad 3.1/index.html" class="btn btn-neon me-2">Demo</a>
+                <a href="https://github.com/N00US/Event-Management-System" class="btn btn-outline-neon">Code</a>
+                <a href="Unidad 3.1/U3.1 Sistema de Gestión de Eventos-CASG.pdf" class="btn btn-outline-neon">PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 5-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-neon h-100">
+            <img src="Images/5.png" class="card-img-top" alt="Proyecto 5">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-neon">Web Responsive with Bootstrap</h5>
+              <p class="card-text text-white">
+                This professional portfolio you are viewing right now. Complete integration of projects on a single website.
+              </p>
+              <div class="btn-container mt-auto">
+                <a href="#" class="btn btn-neon me-2">Demo</a>
+                <a href="#" class="btn btn-outline-neon">Code</a>
+                <a href="#" class="btn btn-outline-neon">PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--CARD 6-->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card border-neon h-100">
+            <img src="Images/6.png" class="card-img-top" alt="Proyecto 6">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-neon">Landing Page</h5>
+              <p class="card-text text-white">
+                Recreation of a website for an online bookstore.
+              </p>
+              <div class="btn-container mt-auto">
+                <a href="Pilares/index.html" class="btn btn-neon me-2">Demo</a>
+                <a href="https://github.com/N00US/Landing-Page" class="btn btn-outline-neon">Code</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
+                   class="btn btn-outline-neon">PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!--SECCIÓN HABILIDADES / EXPERIENCIA-->
+<section id="habilidades" class="py-5 bg-black text-light">
+  <div class="container">
+
+    <!--TÍTULO PRINCIPAL-->
+    <h2 class="text-center text-neon mb-5">Skills</h2>
+
+    <div class="row g-5 align-items-start">
+
+      <!--SOFTWARE & TECNOLOGÍAS / IDIOMAS -->
+      <div class="col-md-6 skills-left">
+
+        <!--SOFTWARE & TECHNOLOGIES-->
+        <h4 class="text-neon mb-3">Software & Technologies</h4>
+        <div class="skills-grid mb-5">
+
+          <div class="text-center skill-item">
+            <i class="fa-solid fa-file-excel skill-icon"></i>
+            <p class="mb-0">Excel VBA</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fas fa-chart-bar skill-icon fa-2x"></i>
+            <p class="mb-0">Power BI</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fa-brands fa-python skill-icon"></i>
+            <p class="mb-0">Python</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fa-solid fa-code skill-icon"></i>
+            <p class="mb-0">VS Code</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fa-brands fa-github skill-icon"></i>
+            <p class="mb-0">GitHub</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fab fa-js-square skill-icon fa-2x"></i>
+            <p class="mb-0">JavaScript</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fas fa-database skill-icon fa-2x"></i>
+            <p class="mb-0">PostgreSQL</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fab fa-linux skill-icon fa-2x"></i>
+            <p class="mb-0">Linux</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fab fa-windows skill-icon fa-2x"></i>
+            <p class="mb-0">Windows</p>
+          </div>
+
+          <div class="text-center skill-item">
+            <i class="fab fa-google skill-icon fa-2x"></i>
+            <p class="mb-1">Google Workspace</p>
+          </div>
+
+        </div>
+
+        <!--IDIOMAS-->
+        <h4 class="text-neon mb-3">Languages</h4>
+
+        <!-- Spanish -->
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Spanish (Native)</span>
+            <span>100%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-neon" style="width: 100%"></div>
+          </div>
+        </div>
+
+        <!-- English -->
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>English (B2 – Technical)</span>
+            <span>80%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-neon" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <!-- Italian -->
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Italian (Begginer)</span>
+            <span>50%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-neon" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <!-- Russian -->
+        <div class="mb-3">
+          <div class="d-flex justify-content-between">
+            <span>Russian (Begginer)</span>
+            <span>10%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-neon" style="width: 10%"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--CORE COMPETENCIES-->
+      <div class="col-md-6 core-competencies">
+        <h4 class="text-neon">Core Competencies</h4>
+
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Strategic thinking
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Problem-solving
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Communication skills
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Teamwork & collaboration
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Leadership
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Time management
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Adaptability & flexibility
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Analytical thinking
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Decision-making
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Technical or digital literacy
+          </li>
+
+          <li class="list-group-item bg-black border-neon text-white">
+            <i class="fa-solid fa-check text-neon me-2"></i>
+            Critical thinking
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--SECCIÓN EXPERIENCIA-->
+<section id="experiencia" class="py-5 bg-black text-light">
+  <div class="container">
+
+    <h2 class="text-center text-neon mb-5">Experience</h2>
+
+    <div class="timeline">
+
+      <!-- EXPERIENCIA 1 -->
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h4 class="text-neon">Administrative & Operations Support</h4>
+        <h6 class="text-secondary">INFOTEC · Jul 2025 – Present</h6>
+        <p>
+          Provided administrative and operational support while improving internal processes through spreadsheet automation, basic scripting, reporting, email communication, and class monitoring. Assisted in optimizing workflows and supporting daily operations across teams.
+        </p>
+      </div>
+
+      <!-- EXPERIENCIA 2 -->
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h4 class="text-neon">Administrative Operations Analyst</h4>
+        <h6 class="text-secondary">
+          Manric Consulting Corporate, TELMEX, C5 · May 2023 – Aug 2024
+        </h6>
+        <p>
+          Collaborated on the “Mi C911E” project within the “Mi Ciudad Segura” ecosystem for Mexico City. Prepared, reviewed, and managed written and photographic reports for over 7,000 public safety totems. Performed remote configuration of equipment such as cameras, routers, ONTs, and modules. Provided technical support and follow-up for field personnel, trained new staff, maintained databases, and managed report documentation from creation through final client delivery.
+        </p>
+      </div>
+
+      <!-- EXPERIENCIA 3 -->
+      <div class="timeline-item">
+        <span class="timeline-dot"></span>
+        <h4 class="text-neon">IT & Customer Support Assistant</h4>
+        <h6 class="text-secondary">Cib&Kaban · Feb 2015 – Dec 2018</h6>
+        <p>
+          Provided customer service and daily operational support in a cybercafé environment. Assisted with administrative tasks, local network setup and basic configuration, and troubleshooting of computer equipment. Delivered basic computer skills training to youth and senior adults, supported general maintenance tasks, and performed basic hardware and peripheral repairs.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--SECCIÓN EDUCACIÓN-->
+<section id="educacion" class="py-5 bg-black text-light">
+  <div class="container">
+
+    <h2 class="text-center text-neon mb-5">Education</h2>
+
+    <div class="row g-4">
+
+      <!-- EDUCACIÓN 1 -->
+      <div class="col-md-6">
+        <div class="card education-card border-neon bg-black h-100">
+          <div class="card-body">
+            <h5 class="card-title text-neon">
+              Associate Degree in Cybersecurity
+            </h5>
+            <h6 class="card-subtitle mb-2 text-secondary">
+              Instituto Nacional de Formación Técnico Profesional (INFOTEC)
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCACIÓN 2 -->
+      <div class="col-md-6">
+        <div class="card education-card border-neon bg-black h-100">
+          <div class="card-body">
+            <h5 class="card-title text-neon">
+              Student at the Public School of Code
+            </h5>
+            <h6 class="card-subtitle mb-2 text-secondary">
+              PILARES (Feb 2025 – Dec 2025, 150 hrs)
+            </h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--SECCIÓN CONTACTO-->
+<section id="contacto" class="py-5 bg-black text-light">
+  <div class="container">
+
+    <h2 class="text-center text-neon mb-5">Contact</h2>
+
+    <form id="contact-form" novalidate>
+
+      <div class="row g-3">
+
+        <!-- Nombre -->
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Full Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            placeholder="Enter your full name"
+            required
+          >
+          <span class="error" id="error-nombre"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          >
+          <span class="error" id="error-email"></span>
+        </div>
+
+        <!-- Asunto -->
+        <div class="col-md-6">
+          <label for="asunto" class="form-label">Subject / Reason</label>
+          <select class="form-select" id="asunto" name="asunto" required>
+            <option value="">Select a subject</option>
+            <option value="oferta">Job offer</option>
+            <option value="colaboracion">Collaboration</option>
+            <option value="consulta">Technical consultation</option>
+            <option value="otro">Other</option>
+          </select>
+          <span class="error" id="error-asunto"></span>
+        </div>
+
+      </div>
+
+      <!-- Otro asunto -->
+      <div class="mt-3 otro-asunto" id="otro-container">
+        <label for="otro" class="form-label">Specify the reason</label>
+        <input type="text" class="form-control" id="otro" name="otro">
+        <span class="error" id="error-otro"></span>
+      </div>
+
+      <!-- Mensaje -->
+      <div class="mt-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea
+          class="form-control"
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          placeholder="Describe your message..."
+          required
+        ></textarea>
+        <span class="error" id="error-mensaje"></span>
+      </div>
+
+      <!-- Términos -->
+      <div class="form-check mt-3">
+        <input class="form-check-input" type="checkbox" id="terminos" name="terminos">
+        <label class="form-check-label" for="terminos">
+          I accept the
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalTerms">
+            privacy policy and terms of use
+          </a>.
+        </label>
+        <span class="error" id="error-terminos"></span>
+      </div>
+
+      <!-- Botones -->
+      <div class="mt-4 d-flex flex-wrap gap-2">
+        <button type="submit" class="btn btn-neon flex-grow-1">
+          SEND MESSAGE
+        </button>
+        <button type="reset" class="btn btn-outline-neon flex-grow-1">
+          CLEAR FORM
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!--FOOTER-->
+<footer class="bg-dark text-light py-4 border-top border-neon">
+  <div
+    class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+  >
+    <p class="mb-2 mb-md-0">&copy; 2026 NOUS</p>
+    <p class="mb-2 mb-md-0">Bootstrap</p>
+    <p class="mb-2 mb-md-0">ChatGPT</p>
+
+    <div>
+      <a href="https://github.com/N00US" class="text-neon me-3">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+      <a
+        href="https://www.youtube.com/shorts/KyQ6VeywlSI"
+        class="text-neon me-3"
+      >
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!--SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Js/script.js"></script>
+<script src="Js/animations.js"></script>
+
+</body>
+</html>
